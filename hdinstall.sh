@@ -9,20 +9,28 @@ sudo cp ./etc/pip.conf /etc/
 echo "update apt update source"
 sudo cp -r ./etc/apt/* /etc/apt/
 
+echo "update apt db"
+sudo apt-get update
+
 echo "update hassbian-script"
 sudo hassbian-config upgrade hassbian-script
 
 echo "update hassbian system"
 sudo hassbian-config upgrade hassbian
 
-echo "install libAvahi"
-sudo apt-get -y install libavahi-compat-libdnssd-dev
-
 echo "start install_homeassistant"
 sudo systemctl start install_homeassistant.service
 
+# echo "install libAvahi"
+# sudo apt-get -y install libavahi-compat-libdnssd-dev
+
 echo "install cloud9"
 sudo hassbian-config install cloud9
+
+echo "install node.js 9.x"
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+
+sudo apt-get install -y nodejs
 
 echo "update npm update soure"
 sudo npm config set registry https://registry.npm.taobao.org
@@ -40,4 +48,4 @@ sudo systemctl daemon-reload
 sudo systemctl enable homebridge.service
 
 echo "update sudoers"
-sudo cp ./etc/sudoers.d/* /etc/sudoers.d/*
+sudo cp ./etc/sudoers.d/* /etc/sudoers.d/

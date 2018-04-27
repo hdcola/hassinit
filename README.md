@@ -8,3 +8,8 @@ cd ~
 rm -rf hassinit
 git clone https://github.com/hdcola/hassinit.git
 ```
+
+
+```
+git clone https://github.com/hdcola/LCD-show.git
+```
