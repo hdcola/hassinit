@@ -13,3 +13,9 @@ git clone https://github.com/hdcola/hassinit.git
 ```
 git clone https://github.com/hdcola/LCD-show.git
 ```
+
+```
+dtoverlay=tft35a:rotate=270
+
+tail -F /var/log/syslog
+```
