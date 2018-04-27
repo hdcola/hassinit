@@ -8,3 +8,6 @@ sudo cp ./etc/pip.conf /etc/
 
 echo "update apt update source"
 sudo cp -r ./etc/apt/* /etc/apt/
+
+echo "start install_homeassistant"
+sudo systemctl start install_homeassistant.service
