@@ -1,0 +1,13 @@
+[Unit]
+Description=frpc daemon
+After=syslog.target  network.target
+Wants=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/frpc -c /home/homeassistant/frp/frpc.ini
+ExecStop=/bin/kill $MAINPID
+TimeoutStartSec=30
+
+[Install]
+WantedBy=multi-user.target
