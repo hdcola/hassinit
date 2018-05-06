@@ -25,6 +25,13 @@ cd hassinit
 dtoverlay=tft35a:rotate=270
 ```
 
+启动pi自动登录
+* sudo raspi-config
+* 选择Boot Options
+* Desktop / CLT
+* console Autologin Text console
+* finish
+
 在 /etc/rc.local里加入
 
 ```
