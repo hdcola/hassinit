@@ -24,6 +24,7 @@ echo "install service"
 sudo cp -r ./etc/systemd/* /etc/systemd/
 sudo systemctl daemon-reload
 sudo systemctl enable homebridge.service
+sudo systemctl start homebridge.service
 
 echo "update sudoers"
 sudo cp ./etc/sudoers.d/* /etc/sudoers.d/
