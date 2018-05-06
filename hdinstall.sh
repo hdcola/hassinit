@@ -29,4 +29,5 @@ sudo systemctl start homebridge.service
 echo "update sudoers"
 sudo cp ./etc/sudoers.d/* /etc/sudoers.d/
 
-sudo apt-get -y install libav-tools
+sudo apt-get update
+sudo apt-get -y --fix-missing install libav-tools
