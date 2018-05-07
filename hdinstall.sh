@@ -17,9 +17,6 @@ sudo npm install -g --unsafe-perm homebridge
 echo "install homebridge-config-ui-x"
 sudo npm install -g --unsafe-perm homebridge-config-ui-x
 
-echo "install cloud9"
-sudo hassbian-config install cloud9
-
 echo "install service"
 sudo cp -r ./etc/systemd/* /etc/systemd/
 sudo systemctl daemon-reload
@@ -28,6 +25,9 @@ sudo systemctl start homebridge.service
 
 echo "update sudoers"
 sudo cp ./etc/sudoers.d/* /etc/sudoers.d/
+
+echo "install cloud9"
+sudo hassbian-config install cloud9
 
 sudo apt-get update
 sudo apt-get -y --fix-missing install libav-tools

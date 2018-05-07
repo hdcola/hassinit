@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "stop install_homeassistant"
+sudo systemctl daemon-reload
 sudo systemctl stop install_homeassistant.service
 
 echo "update pip update source"
