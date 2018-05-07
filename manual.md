@@ -25,8 +25,8 @@ network={
 
 ### 浏览器访问的工具
 
-* http://hassbian.local:8123 这是HomeAssistant的管理界面（后面简称ha管理）。默认没有密码。
-* http://hassbian.local:8080 这是HomeBridge的管理界面（后面简称hb管理）。默认用户名admin、密码admin
+* http://hassbian.local:8123 这是HomeAssistant的管理界面（后面简称ha管理）。默认密码```welcome```
+* http://hassbian.local:8080 这是HomeBridge的管理界面（后面简称hb管理）。默认用户名```admin```、密码```admin```
 * http://hassbian.local:8181 这是Cloud9的管理界面
 
 ### 安装app
@@ -54,6 +54,20 @@ ssh端口22，用户名pi，密码raspberry
 * 选择"HomeAssistant Bridge"
 * 在未认证配件里，选择"任然添加"
 * 输入hb管理界面里面的六位数字，如"123-45-789"
+
+## 修改密码
+
+* HA
+
+通过Cloud9管理，在```.homeassistant/secrets.yaml```中修改```http_password:``` 条目
+
+* HB
+
+登录到hb管理界面，进入右上角```User Accounts```传送门
+
+* SSH
+
+ssh到pi上，passwd修改密码。如果嫌麻烦，找老黄请求翻牌子。
 
 ## 请求翻牌子
 
