@@ -2,7 +2,7 @@
 
 Hassbian初始化是一个烦人的事情，用这个项目把标准化的操作都整了，省得麻烦。
 
-标准的安装
+## 标准的安装
 
 ```
 cd ~
@@ -14,6 +14,23 @@ cd hassinit
 ./hdinstall.sh
 ./zconfig.sh
 ```
+
+## 服务
+
+* HomeAssistant
+
+http://hassbian.local:8123 默认密码： welcome
+
+* HomeBridge
+
+http://hassbian.local:8080 默认用户： admin 默认密码： admin
+
+* Cloud9
+
+http://hassbian.local:8181
+
+
+## 配置3.5寸TFT
 
 如果你需要配置3.5的屏幕可以再执行
 ```
