@@ -8,6 +8,9 @@ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 
 sudo apt-get install -y nodejs
 
+echo "update npm"
+sudo npm i -g npm
+
 echo "update npm update soure"
 sudo npm config set registry https://registry.npm.taobao.org
 
