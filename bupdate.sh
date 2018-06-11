@@ -18,3 +18,5 @@ sudo hassbian-config upgrade hassbian-script
 
 echo "update hassbian system"
 sudo hassbian-config upgrade hassbian
+
+#sudo apt --fix-broken install
