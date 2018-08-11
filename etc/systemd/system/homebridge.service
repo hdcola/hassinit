@@ -6,7 +6,7 @@ After=syslog.target network-online.target
 [Service]
 Type=simple
 User=homeassistant
-ExecStart=/usr/bin/homebridge
+ExecStart=/usr/bin/homebridge -U /home/homeassistant/homebridge
 Restart=on-failure
 RestartSec=10
 KillMode=process
