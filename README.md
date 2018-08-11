@@ -15,6 +15,10 @@ cd hassinit
 ./zconfig.sh
 ```
 
+可以使用 ```sudo dpkg-reconfigure tzdata``` 换你的时区
+
+可以使用 ```zfrpconfig.sh``` 换一个没有远程协助开关的homeassistant
+
 ## 服务
 
 * HomeAssistant
