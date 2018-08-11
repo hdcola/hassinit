@@ -6,7 +6,7 @@ sudo systemctl restart homebridge.service
 
 
 sudo mkdir /home/homeassistant/homeassistant
-sudo cp -r ./homeassistant.frp/* /home/homeassistant/homeassistant/
+sudo cp -r ./homeassistant.nofrp/* /home/homeassistant/homeassistant/
 sudo chown -R homeassistant.homeassistant /home/homeassistant/homeassistant
 
 sudo systemctl restart home-assistant@homeassistant.service
