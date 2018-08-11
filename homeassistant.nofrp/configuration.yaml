@@ -22,16 +22,6 @@ frontend:
 # Enables configuration UI
 config:
 
-switch:
-  - platform: command_line
-    switches:
-      remote_helper:
-        command_on: "sudo systemctl start frpc"
-        command_off: "sudo systemctl stop frpc"
-        command_state: "systemctl is-active frpc.service"
-        value_template: '{{ value == "active" }}'
-        friendly_name: "远程协助"
-
 homekit:
 
 http:
