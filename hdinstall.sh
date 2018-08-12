@@ -1,5 +1,8 @@
 #!/bin/bash
 
+sudo cp -r ./etc/systemd/* /etc/systemd/
+sudo systemctl daemon-reload
+
 echo "install libAvahi"
 sudo apt-get -y install libavahi-compat-libdnssd-dev
 
@@ -21,7 +24,7 @@ echo "install homebridge-config-ui-x"
 sudo npm install -g --unsafe-perm homebridge-config-ui-x
 
 echo "install service"
-sudo cp -r ./etc/systemd/* /etc/systemd/
+#sudo cp -r ./etc/systemd/* /etc/systemd/
 sudo systemctl daemon-reload
 sudo systemctl enable homebridge.service
 sudo systemctl start homebridge.service
