@@ -17,13 +17,13 @@ cd hassinit
 
 可以使用 ```sudo dpkg-reconfigure tzdata``` 换你的时区
 
-可以使用 ```zfrpconfig.sh``` 换一个没有远程协助开关的homeassistant
+可以使用 ```znofrpconfig.sh``` 换一个没有远程协助开关的homeassistant
 
 ## 服务
 
 * HomeAssistant
 
-http://hassbian.local:8123 默认密码： welcome
+http://hassbian.local:8123 首次进入会要求你设置用户名和密码
 
 * HomeBridge
 
