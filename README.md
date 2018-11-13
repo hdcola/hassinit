@@ -59,7 +59,7 @@ dtoverlay=tft35a:rotate=270
 tail -F /var/log/syslog
 ```
 
-进入python event
+进入python venv
 
 ```
 sudo -u homeassistant -H -s
