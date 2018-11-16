@@ -1,10 +1,10 @@
 #!/bin/bash
 
-wget https://github.com/fatedier/frp/releases/download/v0.18.0/frp_0.18.0_linux_arm.tar.gz
+wget https://github.com/fatedier/frp/releases/download/v0.21.0/frp_0.21.0_linux_arm.tar.gz
 
-tar xzvf frp_0.18.0_linux_arm.tar.gz
+tar xzvf frp_0.21.0_linux_arm.tar.gz
 
-sudo cp frp_0.18.0_linux_arm/frpc /usr/local/bin/
+sudo cp frp_0.21.0_linux_arm/frpc /usr/local/bin/
 
 sudo cp -r ./frp /home/homeassistant/
 
