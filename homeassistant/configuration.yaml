@@ -45,7 +45,7 @@ http:
 # the developers to assist with development of Home Assistant.
 # For more information, please see:
 # https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
-updater:
+# updater:
   # Optional, allows Home Assistant developers to focus on popular components.
   # include_used_components: true
 
@@ -82,6 +82,11 @@ recorder:
   purge_keep_days: 2
   purge_interval: 1
   db_url: sqlite:////run/home-assistant.db
+  exclude:
+    domains:
+      - automation
+    entities:
+      - sun.sun
 
 group: !include groups.yaml
 automation: !include automations.yaml
