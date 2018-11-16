@@ -78,6 +78,11 @@ logbook:
 # Cloud
 # cloud:
 
+recorder:
+  purge_keep_days: 2
+  purge_interval: 1
+  db_url: sqlite:////run/home-assistant.db
+
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
