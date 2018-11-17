@@ -15,7 +15,7 @@ echo "update npm"
 sudo npm i -g npm
 
 echo "update npm update soure"
-sudo npm config set registry https://registry.npm.taobao.org
+sudo -u homeassistant npm config set registry https://registry.npm.taobao.org
 
 echo "install homebridge"
 sudo npm install -g --unsafe-perm homebridge
