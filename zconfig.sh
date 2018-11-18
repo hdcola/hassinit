@@ -17,5 +17,5 @@ sudo systemctl restart home-assistant@homeassistant.service
 
 echo "ln homeassistant homebridge to cloud9"
 sudo rm /home/homeassistant/c9workspace/homeassistant
-sudo ln -s /home/homeassistant/homebridge /home/homeassistant/c9workspace/homebridge
-sudo ln -s /home/homeassistant/homeassistant /home/homeassistant/c9workspace/homeassistant
+sudo -u homeassistant ln -s /home/homeassistant/homebridge /home/homeassistant/c9workspace/homebridge
+sudo -u homeassistant ln -s /home/homeassistant/homeassistant /home/homeassistant/c9workspace/homeassistant
