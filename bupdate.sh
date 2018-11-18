@@ -15,8 +15,8 @@ sudo chown -R homeassistant.homeassistant /home/homeassistant/frp
 echo "update apt db"
 sudo apt-get update
 
-echo "update hassbian-script"
-sudo hassbian-config upgrade hassbian-script
+# echo "update hassbian-script"
+# sudo hassbian-config upgrade hassbian-script
 
 echo "update hassbian system"
 sudo hassbian-config upgrade hassbian
