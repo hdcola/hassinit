@@ -4,7 +4,9 @@ wget https://github.com/fatedier/frp/releases/download/v0.21.0/frp_0.21.0_linux_
 
 tar xzvf frp_0.21.0_linux_arm.tar.gz
 
-sudo cp frp_0.21.0_linux_arm/frpc /usr/local/bin/
+sudo cp frp_0.21.0_linux_arm/frpc /usr/local/bin/frpc.0.21.0
+
+sudo ln -s /usr/local/bin/frpc.0.21.0 /usr/local/bin/frpc
 
 sudo cp -r ./frp /home/homeassistant/
 
